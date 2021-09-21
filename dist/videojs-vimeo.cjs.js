@@ -2,7 +2,7 @@
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var videojs = _interopDefault(require('../../../video.js/dist/video.cjs.js'));
+var videojs = _interopDefault(require('./../../video.js/dist/video.cjs.js'));
 var VimeoPlayer = _interopDefault(require('@vimeo/player'));
 
 let cssInjected = false;
@@ -62,7 +62,8 @@ class Vimeo extends Tech {
       url: this.options_.source.src,
       byline: false,
       portrait: false,
-      title: false
+      title: false,
+      controls: true,
     };
 
     if (this.options_.autoplay) {
