@@ -2,7 +2,7 @@
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var videojs = _interopDefault(require('video.js'));
+var videojs = _interopDefault(require('../../../video.js/dist/video.cjs.js'));
 var VimeoPlayer = _interopDefault(require('@vimeo/player'));
 
 let cssInjected = false;
